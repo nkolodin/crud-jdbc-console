@@ -1,0 +1,23 @@
+create sequence group_seq start 1;
+create table university_groups
+(
+	id bigint not null default (nextval('group_seq')),
+    group_name varchar(10)								
+);					
+create sequence student_seq start 1;
+create table students
+(
+	student_id bigint not null default (nextval('student_seq')),
+	groupd_id bigint,
+	first_name varchar(20),
+	last_name varchar(20)
+);										
+create sequence course_seq start 1;
+create table courses
+(
+	course_id bigint not null default(nextval('course_seq')),
+	course_name varchar(10),
+	course_description varchar(35)
+);
+								
+								
