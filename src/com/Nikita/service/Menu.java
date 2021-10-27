@@ -85,6 +85,7 @@ public class Menu {
                     String studentCourses = scanner.nextLine();
                     sqlGenerator.removeStudentFromCourse(studentCourses, studentIdToRemoveCourse);
                     System.out.println("Course was removed");
+                    break;
                 case "7":
                     System.exit(0);
             }
